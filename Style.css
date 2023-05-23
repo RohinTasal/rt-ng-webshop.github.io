@@ -1,0 +1,145 @@
+/* Generelle stilarter */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    text-align: center;
+    margin: 20px;
+}
+
+.product img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product p.price {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+
+.checkout-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+}
+
+/* Specifikke stilarter til forskellige sider */
+
+/* Index side */
+.index {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Webshop side */
+.webshop {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Kontakt side */
+.contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Kurv side */
+.cart {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Generelle stilarter for knapper */
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Responsivitet */
+
+/* Mobil */
+@media only screen and (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .product-container {
+        justify-content: center;
+    }
+}
